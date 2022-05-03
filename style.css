@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0 50px;
+    background: linear-gradient(135deg, #f2edff 55vw, #ffffff 0px);
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    background: #5326d5;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+button:hover {
+    background: #3e1da0;
+    transform: scale(1.05);           
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+*:focus-visible {
+    outline: 3px solid #881f4c91;
+}
+
+.main {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.header-logo > img {
+    height: 40px;
+}
+
+.header-navi {
+    padding-left: 35px;
+}
+
+.header-navi > li {
+    display: inline-block;
+    list-style: none;
+    font-weight: 700;
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.header-navi > li > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.header-navi > li > a::after {
+    display: block;
+    width: 0;
+    height: 4px;
+    margin-top: 2px;
+    background: #bb2c6a;
+    content: '';
+    transition: width 0.5s ease-in;
+}
+
+.header-navi > li:hover > a::after {
+    width: 80%;
+}
+
+.banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 50px 50px 50px 0;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.banner:hover {
+    transform: scale(1.05); 
+}
+
+.banner-content {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.text {
+    background: #ffe8f2;
+    padding: 10px 40px 30px 40px;
+    text-align: center;
+}
+
+.horiz-img-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.horiz-img-list > div {
+    padding: 10px;
+}
+
+.horiz-img-list img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.article {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.article > img {
+    border-radius: 20px;
+    width: 100%;
+    filter: brightness(90%);
+    transition: transform 0.5s;
+}
+
+.article:hover > img {
+    transform: scale(105%);
+}
+
+.link {
+    position: relative;
+    font-weight: 600;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 3px;
+    background: #3F25EA;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.2s ease-in;
+}
+
+.link:hover::before {
+    width: 100%;
+}
+
+.bubble {
+    padding: 10px 40px 30px 40px;
+    border-radius: 50px 50px 0 50px;
+}
+
+div.blue {
+    background: #d9d2f3;
+    color: #3a1c97;
+}
+
+div.red {
+    background: #ffcbe1;
+    color: #992558;
+}
+
+button.red {
+    background: #bb2c6a;
+}
+
+button:hover.red {
+    background: #881f4d;
+}
+
+.link.red::before {
+    background: #bb2c6a; 
+}
+
+.inset {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.norm {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: inherit;
+    border: 3px solid #85858577;
+    transition: border 0.2s;
+    font-weight: 600;
+}
+
+.search:focus {
+    border: 3px solid #992558;
+    outline: none;
+}
+
+.sorter-hidden, .search-hidden {
+    display: none;
+}
+
+.tag {
+    background: #d9d2f3;
+    color: #3a1c97;
+    border-radius: 5px;
+    padding: 2px 4px;
+    font-weight: 600;
+}
+
+.article-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.grid-image {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
