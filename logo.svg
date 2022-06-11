@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.2" width="127.53mm" height="62.51mm" viewBox="248 250 12753 6251" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+<svg version="1.2" width="140mm" height="80mm" viewBox="0 0 13700 7000" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="14000" height="8000"/>
+  </clipPath>
+  <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
+   <rect x="14" y="8" width="13972" height="7984"/>
+  </clipPath>
+ </defs>
+ <defs class="TextShapeIndex">
+  <g ooo:slide="id1" ooo:id-list="id3 id4 id5 id6"/>
+ </defs>
  <defs class="EmbeddedBulletChars">
   <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
    <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
@@ -33,18 +44,42 @@
    <path d="M 173,740 C 173,903 231,1043 346,1159 462,1274 601,1332 765,1332 928,1332 1067,1274 1183,1159 1299,1043 1357,903 1357,740 1357,577 1299,437 1183,322 1067,206 928,148 765,148 601,148 462,206 346,322 231,437 173,577 173,740 Z"/>
   </g>
  </defs>
- <g class="Page">
-  <g class="com.sun.star.drawing.ClosedBezierShape">
-   <g id="id3">
-    <rect class="BoundingBox" stroke="none" fill="none" x="248" y="250" width="12753" height="6251"/>
-    <g>
-     <defs>
-      <linearGradient id="gradient1" x1="3677" y1="-1729" x2="9571" y2="8479" gradientUnits="userSpaceOnUse">
-       <stop offset="0" style="stop-color:rgb(58,37,240)"/>
-       <stop offset="1" style="stop-color:rgb(214,46,78)"/>
-      </linearGradient>
-     </defs>
-     <path style="fill:url(#gradient1)" d="M 2332,250 L 2332,1926 2384,1921 2436,1918 2489,1917 2541,1916 2691,1921 2841,1936 2989,1960 3134,1994 3277,2038 3418,2090 3554,2152 3687,2223 3815,2302 3937,2390 4052,2485 4162,2587 4264,2697 4359,2812 4447,2934 4526,3062 4597,3195 4659,3331 4711,3472 4755,3615 4789,3760 4813,3908 4828,4058 4833,4208 4828,4358 4813,4508 4789,4656 4755,4801 4711,4944 4659,5085 4597,5221 4526,5354 4447,5482 4359,5604 4264,5719 4162,5829 4052,5931 3937,6026 3815,6114 3687,6193 3554,6264 3418,6326 3277,6378 3134,6422 2989,6456 2841,6480 2691,6495 2541,6500 2489,6499 2436,6498 2384,6495 2332,6490 2332,6500 249,6500 249,4208 249,250 2332,250 Z M 7375,250 L 8625,2750 9875,250 13000,6500 10500,6500 6750,6500 4250,6500 7375,250 Z"/>
+ <g>
+  <g id="id2" class="Master_Slide">
+   <g id="bg-id2" class="Background"/>
+   <g id="bo-id2" class="BackgroundObjects"/>
+  </g>
+ </g>
+ <g class="SlideGroup">
+  <g>
+   <g id="container-id1">
+    <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+     <g class="Page">
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id3">
+        <rect class="BoundingBox" stroke="none" fill="none" x="4207" y="277" width="6937" height="6936"/>
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="423" stroke-linejoin="miter" d="M 7675,750 L 10800,7000 4550,7000 7675,750 Z"/>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id4">
+        <rect class="BoundingBox" stroke="none" fill="none" x="338" y="2288" width="4926" height="4926"/>
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="423" stroke-linejoin="miter" d="M 2800,2500 L 2800,2500 C 3196,2500 3584,2604 3926,2802 4268,2999 4552,3283 4749,3625 4947,3967 5051,4355 5051,4751 L 5051,4751 5051,4751 C 5051,5146 4947,5534 4749,5876 4552,6218 4268,6502 3926,6699 3584,6897 3196,7001 2801,7001 L 550,7001 550,2500 2800,2500 Z"/>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id5">
+        <rect class="BoundingBox" stroke="none" fill="none" x="338" y="538" width="2425" height="6675"/>
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="423" stroke-linejoin="miter" d="M 1550,7000 L 550,7000 550,750 2550,750 2550,7000 1550,7000 Z"/>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id6">
+        <rect class="BoundingBox" stroke="none" fill="none" x="6707" y="277" width="6937" height="6936"/>
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="423" stroke-linejoin="miter" d="M 10175,750 L 13300,7000 7050,7000 10175,750 Z"/>
+       </g>
+      </g>
+     </g>
     </g>
    </g>
   </g>
