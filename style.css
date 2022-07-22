@@ -193,18 +193,32 @@ button:active {
 
 ::-webkit-scrollbar {
     width: 11px;
+    height: 11px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:vertical {
     border-right: 4px solid white;
     border-left: 4px solid white;
     background: black;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
     background: white;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+    box-shadow: inset 0px 0px 0px 3px black;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     box-shadow: inset 0px 0px 0px 3px black;
 }
 
@@ -214,6 +228,7 @@ button:active {
 
 ::-webkit-scrollbar-button:single-button {
     height: 7px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
@@ -238,4 +253,28 @@ button:active {
     border-left: 5px solid black;
     border-right: 5px solid black;
     border-top: 7px solid white;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 7px solid black;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid black;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 7px solid white;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 7px solid white;
 }
