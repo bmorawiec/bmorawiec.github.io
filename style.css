@@ -2,16 +2,36 @@
 
 @media only screen and (min-width: 800px) {
     .grid-large {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
     }
 
     .grid-small {
         grid-template-columns: 30% 70%;
     }
 
-    .bio {
+    .grid-tools {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .bio, .recommended {
         margin: 0 100px;
     }
+}
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -41,12 +61,12 @@ button:active {
     outline: 3px solid black;
 }
 
-*:focus-visible {
+:focus-visible {
     outline: 3px dashed black;
 }
 
-*::selection {
-    background: rgb(1, 0, 0);
+::selection {
+    background: black;
     color: white;
 }
 
@@ -68,35 +88,34 @@ button:active {
     display: grid;
 }
 
-.grid-small {
-    display: grid;
-    row-gap: 20px;
-}
-
-.grid-small > img {
-    width: 100%;
-    filter: brightness(0.9);
-}
-
-.grid-small > div {
-    padding-left: 30px;
-}
-
-.grid-large > div {
-    margin: 15px;
-    position: relative;
-    padding-bottom: 40px;
-}
-
 .grid-large > img {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.chooser {
-    position: absolute;
-    bottom: 0;
+.grid-small {
+    display: grid;
+    row-gap: 20px;
+}
+
+.grid-large > a {
+    padding: 20px;
+}
+
+.grid-small > img {
+    width: 100%;
+    filter: brightness(0.95);
+}
+
+.grid-small > div {
+    padding-left: 30px;
+}
+
+.grid-tools > a > img {
+    padding: 0 65px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -112,6 +131,7 @@ button:active {
 
 .logo:active {
     background: black;
+    outline: 5px solid black;
 }
 
 .logo:active > img {
@@ -126,6 +146,41 @@ button:active {
     border: 3px solid black;
 }
 
+.recommended {
+    background: black;
+    color: white;
+    padding: 1px 22px 9px 22px;
+    display: block;
+}
+
+.chooser {
+    position: relative;
+    padding: 15px;
+}
+
+.chooser:active {
+    background: black;
+    color: white;
+}
+
+.chooser:active > img {
+    filter: invert();
+}
+
+.chooser:hover::after {
+    background-image: url("media/experience/popout.svg");
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    right: 20px;
+    top: 20px;
+}
+
+.chooser:active::after {
+    filter: invert();
+}
+
 .footer {
     text-align: center;
 }
@@ -134,4 +189,53 @@ button:active {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: inset 0px 0px 0px 3px black;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: black;
+}
+
+::-webkit-scrollbar-button:single-button {
+    height: 7px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid black;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid black;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 7px solid white;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 7px solid white;
 }
